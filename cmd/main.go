@@ -6,6 +6,7 @@ import (
 	"strconv"
 
 	"github.com/Alexamakans/protohackers-go/internal/insecuresocketslayer"
+	"github.com/Alexamakans/protohackers-go/internal/jobcentre"
 	"github.com/Alexamakans/protohackers-go/internal/linereversal"
 )
 
@@ -26,6 +27,8 @@ func run(problem int) {
 		linereversal.Run()
 	case 8:
 		insecuresocketslayer.Run()
+	case 9:
+		jobcentre.Run()
 	default:
 		log.Fatalf("Problem %d is not implemented", problem)
 	}
